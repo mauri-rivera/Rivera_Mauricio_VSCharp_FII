@@ -87,13 +87,15 @@ Console.WriteLine("-------------------------------------------");
 
 static void GetAverage(int[] numbers)
 {
-    double suma = 0, promedio = 0;
+    double promedio;
+    double suma = 0;
     for (int i = 0; i < numbers.Length; i++)
     {
         suma += numbers[i];
     }
 
-    promedio = Math.Round(suma / numbers.Length);
+    //promedio = Math.Round(suma / numbers.Length);
+    promedio = (int)(suma / numbers.Length);
     Console.WriteLine($"El promedio es: {promedio}");
 }
 
